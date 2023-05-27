@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f8ff;
+}
+
+.navbar {
+    background-color:#87cefa;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+
+
+
