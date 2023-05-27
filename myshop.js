@@ -1,12 +1,12 @@
 
-const products = document.querySelector(".products");
+const cocktails = document.querySelector(".cocktails");
 
 async function fetchData() {
   try {
     const response = await fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita");
     const jsonData = await response.json();
     
-    products.innerHTML = `
+    cocktails.innerHTML = `
     ${jsonData.drinks
       .map((element) => {
         const description = element.strInstructions.slice(0, 80) + "...";
@@ -17,7 +17,7 @@ async function fetchData() {
               <div class="card-body">
                 <h5 class="card-title">${title}</h5>
                 <p class="card-text">${description}</p>
-                <a href="#" class="btn btn-primary">View Product</a>
+                <a href="#" class="btn btn-primary">View Cocktail</a>
               </div>
             </div>`;
       }).join("")
